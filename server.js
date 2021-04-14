@@ -2,7 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
-require("dotenv");
+require("dotenv").config();
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -15,9 +15,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://joshuakorf:${process.env.PASSWORD}@cluster0.pabj8.mongodb.net/budget?retryWrites=true&w=majority`, {
-  useNewUrlParser: true,
-  useFindAndModify: false
+mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://Joshuakorf:${process.env.PASSWORD}@cluster0.cha98.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+  useNewUrlParser: true
+  
 });
 
 // routes
