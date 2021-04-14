@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://Joshuakorf:${process.env.PASSWORD}@cluster0.cha98.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+mongoose.connect(process.env.MONGODB_URI || `mongodb+srv://Joshuakorf:Joshua123456$@cluster0.cha98.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
   useNewUrlParser: true
   
 });
